@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mi-aplicacion
+  name: app-demo
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: mi-aplicacion
+      app: app-demo
   template:
     metadata:
       labels:
-        app: mi-aplicacion
+        app: app-demo
     spec:
       containers:
-        - name: mi-contenedor
+        - name: container-app-demo
           image: 719227682233.dkr.ecr.us-east-1.amazonaws.com/app-demo:latest
           ports:
             - containerPort: 80
