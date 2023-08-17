@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: mi-contenedor
-          image: <URI_de_la_Imagen_de_ECR>
+          image: 719227682233.dkr.ecr.us-east-1.amazonaws.com/app-demo:latest
           ports:
             - containerPort: 80
